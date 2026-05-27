@@ -1,4 +1,5 @@
 """Base page class with common functionality for all pages."""
+
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -19,24 +20,18 @@ class BasePage:
     def find_element(self, locator, timeout=None):
         """Find element with explicit wait."""
         wait_time = timeout or self.timeout
-        return WebDriverWait(self.driver, wait_time).until(
-            EC.presence_of_element_located(locator)
-        )
+        return WebDriverWait(self.driver, wait_time).until(EC.presence_of_element_located(locator))
 
     def find_elements(self, locator, timeout=None):
         """Find multiple elements with explicit wait."""
         wait_time = timeout or self.timeout
-        WebDriverWait(self.driver, wait_time).until(
-            EC.presence_of_element_located(locator)
-        )
+        WebDriverWait(self.driver, wait_time).until(EC.presence_of_element_located(locator))
         return self.driver.find_elements(*locator)
 
     def click_element(self, locator, timeout=None):
         """Click on element with explicit wait."""
         wait_time = timeout or self.timeout
-        element = WebDriverWait(self.driver, wait_time).until(
-            EC.element_to_be_clickable(locator)
-        )
+        element = WebDriverWait(self.driver, wait_time).until(EC.element_to_be_clickable(locator))
         element.click()
 
     def send_keys(self, locator, text, timeout=None):
@@ -60,9 +55,7 @@ class BasePage:
         """Check if element is visible."""
         wait_time = timeout or self.timeout
         try:
-            WebDriverWait(self.driver, wait_time).until(
-                EC.visibility_of_element_located(locator)
-            )
+            WebDriverWait(self.driver, wait_time).until(EC.visibility_of_element_located(locator))
             return True
         except:
             return False
@@ -78,9 +71,7 @@ class BasePage:
     def wait_for_element_to_disappear(self, locator, timeout=None):
         """Wait for element to disappear from the page."""
         wait_time = timeout or self.timeout
-        WebDriverWait(self.driver, wait_time).until(
-            EC.invisibility_of_element_located(locator)
-        )
+        WebDriverWait(self.driver, wait_time).until(EC.invisibility_of_element_located(locator))
 
     def get_current_url(self):
         """Get current URL."""

@@ -1,4 +1,5 @@
 """JavaScript Alerts page."""
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.alert import Alert
 from .base_page import BasePage

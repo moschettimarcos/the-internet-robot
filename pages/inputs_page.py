@@ -1,4 +1,5 @@
 """Inputs page."""
+
 from selenium.webdriver.common.by import By
 from .base_page import BasePage
 
@@ -36,6 +37,7 @@ class InputsPage(BasePage):
     def increment_number(self, times=1):
         """Increment number using arrow up key."""
         from selenium.webdriver.common.keys import Keys
+
         input_element = self.find_element(self.NUMBER_INPUT)
         for _ in range(times):
             input_element.send_keys(Keys.ARROW_UP)
@@ -43,6 +45,7 @@ class InputsPage(BasePage):
     def decrement_number(self, times=1):
         """Decrement number using arrow down key."""
         from selenium.webdriver.common.keys import Keys
+
         input_element = self.find_element(self.NUMBER_INPUT)
         for _ in range(times):
             input_element.send_keys(Keys.ARROW_DOWN)
