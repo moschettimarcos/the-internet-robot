@@ -1,50 +1,50 @@
-# The Internet Robot Project
+# Projeto The Internet Robot
 
-Professional automation project for [the-internet.herokuapp.com](https://the-internet.herokuapp.com/) using Robot Framework and Selenium WebDriver. This project demonstrates best practices in test automation, including Page Object Model, reusable keywords, and comprehensive test coverage.
+Projeto profissional de automação para [the-internet.herokuapp.com](https://the-internet.herokuapp.com/) usando Robot Framework e Selenium WebDriver. Este projeto demonstra as melhores práticas em automação de testes, incluindo Page Object Model, keywords reutilizáveis e cobertura abrangente de testes.
 
-## 🚀 Features
+## 🚀 Funcionalidades
 
-- **Page Object Model**: Clean separation between page logic and test cases
-- **Reusable Keywords**: Common keywords for consistent test implementation
-- **Comprehensive Coverage**: Tests for multiple UI components and interactions
-- **Professional Structure**: Well-organized project following industry standards
-- **CI/CD Ready**: GitHub Actions workflow for automated test execution
-- **Cross-Browser Support**: Configured for Chrome (easily extensible to other browsers)
+- **Page Object Model**: Separação limpa entre lógica de página e casos de teste
+- **Keywords Reutilizáveis**: Keywords comuns para implementação consistente de testes
+- **Cobertura Abrangente**: Testes para múltiplos componentes e interações de UI
+- **Estrutura Profissional**: Projeto bem organizado seguindo padrões da indústria
+- **Pronto para CI/CD**: Workflow do GitHub Actions para execução automatizada de testes
+- **Suporte Multi-Browser**: Configurado para Chrome (facilmente extensível para outros navegadores)
 
-## 📋 Test Coverage
+## 📋 Cobertura de Testes
 
-The project includes automated tests for the following features:
+O projeto inclui testes automatizados para as seguintes funcionalidades:
 
-- **Form Authentication**: Login, logout, and error handling
-- **Checkboxes**: Selection and deselection of checkboxes
-- **Dropdown**: Option selection by text, value, and index
-- **Dynamic Controls**: Element addition/removal and enable/disable
-- **Add/Remove Elements**: Dynamic element manipulation
-- **JavaScript Alerts**: Alert, Confirm, and Prompt interactions
-- **Key Presses**: Keyboard input detection
-- **Inputs**: Number input and arrow key interactions
-- **Hovers**: Hover interactions and caption display
+- **Autenticação de Formulário**: Login, logout e tratamento de erros
+- **Checkboxes**: Seleção e desseleção de checkboxes
+- **Dropdown**: Seleção de opções por texto, valor e índice
+- **Controles Dinâmicos**: Adição/remoção de elementos e habilitar/desabilitar
+- **Adicionar/Remover Elementos**: Manipulação dinâmica de elementos
+- **Alerts JavaScript**: Interações de Alert, Confirm e Prompt
+- **Pressionamento de Teclas**: Detecção de entrada de teclado
+- **Inputs**: Input numérico e interações com teclas de seta
+- **Hovers**: Interações de hover e exibição de legendas
 
-## 🛠️ Tech Stack
+## 🛠️ Stack Tecnológico
 
 - **Robot Framework**: 7.0.1
 - **SeleniumLibrary**: 6.4.0
 - **Selenium WebDriver**: 4.23.1
 - **Python**: 3.9+
 
-## 📁 Project Structure
+## 📁 Estrutura do Projeto
 
 ```
 the-internet-robot/
 ├── .github/
 │   └── workflows/
-│       └── ci.yml              # GitHub Actions CI/CD pipeline
+│       └── ci.yml              # Pipeline CI/CD do GitHub Actions
 ├── pages/                      # Page Object Model
 │   ├── __init__.py
-│   ├── base_page.py           # Base page with common methods
-│   ├── login_page.py          # Login page object
-│   ├── checkboxes_page.py     # Checkboxes page object
-│   ├── dropdown_page.py       # Dropdown page object
+│   ├── base_page.py           # Página base com métodos comuns
+│   ├── login_page.py          # Objeto de página de login
+│   ├── checkboxes_page.py     # Objeto de página de checkboxes
+│   ├── dropdown_page.py       # Objeto de página de dropdown
 │   ├── dynamic_controls_page.py
 │   ├── add_remove_elements_page.py
 │   ├── file_upload_page.py
@@ -52,10 +52,10 @@ the-internet-robot/
 │   ├── key_presses_page.py
 │   ├── inputs_page.py
 │   └── hovers_page.py
-├── resources/                  # Robot Framework resources
-│   ├── config.robot           # Configuration variables
-│   └── common_keywords.robot  # Reusable keywords
-├── tests/                      # Test suites
+├── resources/                  # Recursos do Robot Framework
+│   ├── config.robot           # Variáveis de configuração
+│   └── common_keywords.robot  # Keywords reutilizáveis
+├── tests/                      # Suítes de testes
 │   ├── test_login.robot
 │   ├── test_checkboxes.robot
 │   ├── test_dropdown.robot
@@ -65,82 +65,82 @@ the-internet-robot/
 │   ├── test_key_presses.robot
 │   ├── test_inputs.robot
 │   └── test_hovers.robot
-├── results/                    # Test execution results
-├── screenshots/                # Failure screenshots
+├── results/                    # Resultados de execução de testes
+├── screenshots/                # Screenshots de falhas
 ├── .gitignore
 ├── README.md
 ├── CONTRIBUTING.md
-├── requirements.txt            # Python dependencies
-├── pyproject.toml             # Project configuration
-└── robot.yaml                 # Robot Framework configuration
+├── requirements.txt            # Dependências Python
+├── pyproject.toml             # Configuração do projeto
+└── robot.yaml                 # Configuração do Robot Framework
 ```
 
-## 🚦 Prerequisites
+## 🚦 Pré-requisitos
 
-- Python 3.9 or higher
-- pip (Python package installer)
+- Python 3.9 ou superior
+- pip (instalador de pacotes Python)
 - Git
 
-## 📦 Installation
+## 📦 Instalação
 
-1. **Clone the repository**
+1. **Clone o repositório**
    ```bash
-   git clone https://github.com/yourusername/the-internet-robot.git
+   git clone https://github.com/seu-usuario/the-internet-robot.git
    cd the-internet-robot
    ```
 
-2. **Create a virtual environment** (recommended)
+2. **Crie um ambiente virtual** (recomendado)
    ```bash
    python -m venv venv
    
-   # On Windows
+   # No Windows
    venv\Scripts\activate
    
-   # On macOS/Linux
+   # No macOS/Linux
    source venv/bin/activate
    ```
 
-3. **Install dependencies**
+3. **Instale as dependências**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Install ChromeDriver** (if not using webdriver-manager)
-   - Download ChromeDriver from [ChromeDriver Downloads](https://chromedriver.chromium.org/downloads)
-   - Add ChromeDriver to your system PATH
+4. **Instale o ChromeDriver** (se não estiver usando webdriver-manager)
+   - Baixe o ChromeDriver em [ChromeDriver Downloads](https://chromedriver.chromium.org/downloads)
+   - Adicione o ChromeDriver ao PATH do sistema
 
-## 🎯 Running Tests
+## 🎯 Executando Testes
 
-### Run All Tests
+### Executar Todos os Testes
 ```bash
 robot --outputdir results tests/
 ```
 
-### Run Specific Test Suite
+### Executar Suíte de Testes Específica
 ```bash
 robot --outputdir results tests/test_login.robot
 ```
 
-### Run Tests by Tag
+### Executar Testes por Tag
 ```bash
-# Run only login tests
+# Executar apenas testes de login
 robot --include login --outputdir results tests/
 
-# Run only positive tests
+# Executar apenas testes positivos
 robot --include positive --outputdir results tests/
 
-# Run only specific feature tests
+# Executar apenas testes de funcionalidade específica
 robot --include checkboxes --outputdir results tests/
 ```
 
-### Run Tests in Headless Mode
+### Executar Testes em Modo Headless
 ```bash
 robot --variable HEADLESS:true --outputdir results tests/
 ```
 
-### Run Tests with Specific Browser
+### Executar Testes com Browser Específico
 ```bash
-# Chrome (default)
+# Chrome (padrão)
 robot --variable BROWSER:chrome --outputdir results tests/
 
 # Firefox
@@ -150,21 +150,21 @@ robot --variable BROWSER:firefox --outputdir results tests/
 robot --variable BROWSER:edge --outputdir results tests/
 ```
 
-### Generate Detailed Report
+### Gerar Relatório Detalhado
 ```bash
 robot --outputdir results --loglevel DEBUG tests/
 ```
 
-## 📊 Test Reports
+## 📊 Relatórios de Testes
 
-After test execution, reports are generated in the `results/` directory:
-- `log.html`: Detailed execution log
-- `report.html`: Summary report with statistics
-- `output.xml`: Machine-readable output
+Após a execução dos testes, relatórios são gerados no diretório `results/`:
+- `log.html`: Log de execução detalhado
+- `report.html`: Relatório resumido com estatísticas
+- `output.xml`: Saída legível por máquina
 
-## 🔧 Configuration
+## 🔧 Configuração
 
-Configuration can be modified in `robot.yaml`:
+A configuração pode ser modificada em `robot.yaml`:
 ```yaml
 output_dir: results
 log_level: INFO
@@ -176,74 +176,74 @@ variables:
   EXPLICIT_WAIT: 30s
 ```
 
-## 🤝 Contributing
+## 🤝 Contribuindo
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+Contribuições são bem-vindas! Por favor, leia [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes sobre nosso código de conduta e o processo para enviar pull requests.
 
-## 📝 Development Guidelines
+## 📝 Diretrizes de Desenvolvimento
 
-### Adding New Tests
+### Adicionando Novos Testes
 
-1. Create a new page object in `pages/` directory
-2. Add test cases in `tests/` directory
-3. Use existing keywords from `resources/common_keywords.robot`
-4. Follow the existing naming conventions
-5. Add appropriate tags for test categorization
+1. Crie um novo objeto de página no diretório `pages/`
+2. Adicione casos de teste no diretório `tests/`
+3. Use keywords existentes de `resources/common_keywords.robot`
+4. Siga as convenções de nomenclatura existentes
+5. Adicione tags apropriadas para categorização de testes
 
-### Code Style
+### Estilo de Código
 
-- Use Black for Python code formatting
-- Follow PEP 8 guidelines
-- Add docstrings to all functions and classes
-- Use descriptive variable and function names
+- Use Black para formatação de código Python
+- Siga as diretrizes PEP 8
+- Adicione docstrings a todas as funções e classes
+- Use nomes descritivos para variáveis e funções
 
-### Best Practices
+### Melhores Práticas
 
-- Use Page Object Model for page interactions
-- Keep test cases independent and isolated
-- Use meaningful test names and descriptions
-- Add appropriate tags for test categorization
-- Handle waits properly (explicit waits over implicit)
-- Take screenshots on test failures
+- Use Page Object Model para interações de página
+- Mantenha casos de teste independentes e isolados
+- Use nomes significativos para testes e descrições
+- Adicione tags apropriadas para categorização de testes
+- Trate esperas adequadamente (esperas explícitas sobre implícitas)
+- Tire screenshots em falhas de teste
 
-## 🐛 Troubleshooting
+## 🐛 Solução de Problemas
 
-### ChromeDriver Issues
-If you encounter ChromeDriver issues:
+### Problemas com ChromeDriver
+Se você encontrar problemas com ChromeDriver:
 ```bash
 pip install --upgrade webdriver-manager
 ```
 
-### Element Not Found Errors
-- Increase wait times in `robot.yaml`
-- Check if selectors are correct
-- Verify page is fully loaded
+### Erros de Elemento Não Encontrado
+- Aumente os tempos de espera em `robot.yaml`
+- Verifique se os seletores estão corretos
+- Verifique se a página está totalmente carregada
 
-### Import Errors
-- Ensure virtual environment is activated
-- Verify all dependencies are installed
-- Check Python path includes project directory
+### Erros de Importação
+- Certifique-se de que o ambiente virtual está ativado
+- Verifique se todas as dependências estão instaladas
+- Verifique se o caminho Python inclui o diretório do projeto
 
-## 📄 License
+## 📄 Licença
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para detalhes.
 
-## 👤 Author
+## 👤 Autor
 
 **Marcos**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Portfolio: [yourportfolio.com](https://yourportfolio.com)
+- GitHub: [@seu-usuario](https://github.com/seu-usuario)
+- Portfolio: [seuportfolio.com](https://seuportfolio.com)
 
-## 🙏 Acknowledgments
+## 🙏 Agradecimentos
 
-- [The Internet](https://the-internet.herokuapp.com/) for providing the test application
-- [Robot Framework](https://robotframework.org/) community
-- [Selenium](https://www.selenium.dev/) team
+- [The Internet](https://the-internet.herokuapp.com/) por fornecer o aplicativo de teste
+- Comunidade [Robot Framework](https://robotframework.org/)
+- Equipe [Selenium](https://www.selenium.dev/)
 
-## 📞 Contact
+## 📞 Contato
 
-For questions or suggestions, please open an issue on GitHub or contact [marcos@example.com](mailto:marcos@example.com).
+Para perguntas ou sugestões, por favor abra uma issue no GitHub ou entre em contato em [marcos@example.com](mailto:marcos@example.com).
 
 ---
 
-**Note**: This project is intended for educational and portfolio purposes. It demonstrates professional test automation practices and can be used as a template for other automation projects.
+**Nota**: Este projeto é destinado para fins educacionais e de portfolio. Ele demonstra práticas profissionais de automação de testes e pode ser usado como modelo para outros projetos de automação.
