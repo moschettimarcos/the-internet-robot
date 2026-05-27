@@ -70,18 +70,18 @@ jobs:
         echo "" >> $GITHUB_STEP_SUMMARY
         if [ -f results/output.xml ]; then
           python -c "
-          import xml.etree.ElementTree as ET
-          tree = ET.parse('results/output.xml')
-          root = tree.getroot()
-          total = int(root.attrib.get('total', 0))
-          passed = int(root.attrib.get('pass', 0))
-          failed = int(root.attrib.get('fail', 0))
-          skipped = int(root.attrib.get('skip', 0))
-          print(f'- Total Tests: {total}')
-          print(f'- Passed: {passed}')
-          print(f'- Failed: {failed}')
-          print(f'- Skipped: {skipped}')
-          " >> $GITHUB_STEP_SUMMARY
+import xml.etree.ElementTree as ET
+tree = ET.parse('results/output.xml')
+root = tree.getroot()
+total = int(root.attrib.get('total', 0))
+passed = int(root.attrib.get('pass', 0))
+failed = int(root.attrib.get('fail', 0))
+skipped = int(root.attrib.get('skip', 0))
+print(f'- Total Tests: {total}')
+print(f'- Passed: {passed}')
+print(f'- Failed: {failed}')
+print(f'- Skipped: {skipped}')
+" >> $GITHUB_STEP_SUMMARY
         fi
         
   lint:
