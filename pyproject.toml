@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "the-internet-robot"
+version = "1.0.0"
+description = "Professional automation project for the-internet.herokuapp.com using Robot Framework"
+authors = [
+    {name = "Marcos", email = "marcos@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "robotframework>=7.0.1",
+    "robotframework-seleniumlibrary>=6.4.0",
+    "selenium>=4.23.1",
+    "webdriver-manager>=4.0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.2",
+    "black>=24.4.2",
+    "flake8>=7.1.0",
+    "pylint>=3.2.5",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311', 'py312']
+
+[tool.pylint.messages_control]
+disable = [
+    "too-few-public-methods",
+    "too-many-arguments",
+]
+
+[robot]
+output_dir = "results"
+log_level = "INFO"
