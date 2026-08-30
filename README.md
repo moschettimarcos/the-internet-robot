@@ -235,12 +235,6 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 - LinkedIn: [marcos-moschetti](https://www.linkedin.com/in/marcos-moschetti/)
 - Portfólio: [moschettimarcos.github.io](https://moschettimarcos.github.io/)
 
-## 🙏 Agradecimentos
-
-- [The Internet](https://the-internet.herokuapp.com/) por fornecer o aplicativo de teste
-- Comunidade [Robot Framework](https://robotframework.org/)
-- Equipe [Selenium](https://www.selenium.dev/)
-
 ## 📞 Contato
 
 Para perguntas ou sugestões, abra uma issue neste repositório.
