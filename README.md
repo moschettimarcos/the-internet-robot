@@ -85,7 +85,7 @@ the-internet-robot/
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/seu-usuario/the-internet-robot.git
+   git clone https://github.com/moschettimarcos/the-internet-robot.git
    cd the-internet-robot
    ```
 
@@ -230,9 +230,10 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 
 ## 👤 Autor
 
-**Marcos**
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- Portfolio: [seuportfolio.com](https://seuportfolio.com)
+**Marcos Vinicius** — Analista de QA, automação de testes
+- GitHub: [@moschettimarcos](https://github.com/moschettimarcos)
+- LinkedIn: [marcos-moschetti](https://www.linkedin.com/in/marcos-moschetti/)
+- Portfólio: [moschettimarcos.github.io](https://moschettimarcos.github.io/)
 
 ## 🙏 Agradecimentos
 
@@ -242,7 +243,7 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para d
 
 ## 📞 Contato
 
-Para perguntas ou sugestões, por favor abra uma issue no GitHub ou entre em contato em [marcos@example.com](mailto:marcos@example.com).
+Para perguntas ou sugestões, abra uma issue neste repositório.
 
 ---
 
